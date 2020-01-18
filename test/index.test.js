@@ -119,7 +119,7 @@ describe("firstNamesAllCaps()", () => {
   });
 });
 
-xdescribe("getRunnersByTShirtSize()", () => {
+describe("getRunnersByTShirtSize()", () => {
   it("returns an array of runners of a given shirt size", () => {
     expect(getRunnersByTShirtSize(runners, 'S').every(r => r.shirt_size === 'S')).to.equal(true);
   });
@@ -129,7 +129,7 @@ xdescribe("getRunnersByTShirtSize()", () => {
   });
 });
 
-xdescribe("tallyUpDonations()", () => {
+describe("tallyUpDonations()", () => {
   it("returns 0 for an empty runners array", () => {
     expect(tallyUpDonations([])).to.equal(0);
   });
