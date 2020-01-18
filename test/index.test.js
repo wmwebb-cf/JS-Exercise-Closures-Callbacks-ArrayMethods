@@ -64,14 +64,14 @@ describe("processSum()", () => {
   });
 });
 
-xdescribe("processProduct()", () => {
+describe("processProduct()", () => {
   it("works as specified", () => {
     expect(processProduct(2, 3, n => n + 1000)).to.equal(1006);
     expect(processProduct(0, 9, n => n + 1000)).to.equal(1000);
   });
 });
 
-xdescribe("processContains()", () => {
+describe("processContains()", () => {
   it("works as specified", () => {
     const o = {}
     expect(processContains(o, [1, o, 3], b => b)).to.equal(true);
@@ -93,7 +93,7 @@ xdescribe("processDuplicateFree() [STRETCH TASK]", () => {
   });
 });
 
-xdescribe("getFullNames()", () => {
+describe("getFullNames()", () => {
   it("returns an array of strings", () => {
     expect(getFullNames(runners).every(r => typeof r === 'string')).to.equal(true);
   });
@@ -106,7 +106,7 @@ xdescribe("getFullNames()", () => {
   });
 });
 
-xdescribe("firstNamesAllCaps()", () => {
+describe("firstNamesAllCaps()", () => {
   it("returns an array of strings", () => {
     expect(firstNamesAllCaps(runners).every(r => typeof r === 'string')).to.equal(true);
   });
