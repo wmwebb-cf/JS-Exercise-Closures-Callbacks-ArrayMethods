@@ -56,7 +56,7 @@ describe("processLastItem()", () => {
   });
 });
 
-xdescribe("processSum()", () => {
+describe("processSum()", () => {
   it("works as specified", () => {
     expect(processSum([1, 2, 3], n => n + 1000)).to.equal(1006);
     expect(processSum([1], n => n + 1000)).to.equal(1001);
