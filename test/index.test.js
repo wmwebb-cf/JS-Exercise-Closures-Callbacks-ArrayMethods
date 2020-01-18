@@ -145,7 +145,7 @@ describe("tallyUpDonations()", () => {
   });
 });
 
-xdescribe("counterMaker()", () => {
+describe("counterMaker()", () => {
   const counter = counterMaker()
   it("returns a function", () => {
     expect(isFunction(counter)).to.equal(true);
@@ -161,7 +161,7 @@ xdescribe("counterMaker()", () => {
   });
 });
 
-xdescribe("counterMakerWithLimit()", () => {
+describe("counterMakerWithLimit()", () => {
   const counter = counterMakerWithLimit(3)
   it("returns a function", () => {
     expect(isFunction(counter)).to.equal(true);
